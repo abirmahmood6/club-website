@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "baseUrl": "./",
+
+    "paths": {
+      "@src/*": ["src/*"],
+      "@components/*": ["src/common/components/*"],
+      "@common/*": ["src/common/*"],
+      "@context/*": ["src/common/context/*"],
+      "@modules/*": ["src/modules/*"],
+      "@pages/*": ["src/pages/*"],
+      "@lib/*": ["src/common/lib/*"]
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
