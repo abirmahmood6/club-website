@@ -5,13 +5,12 @@
     "baseUrl": "./",
 
     "paths": {
-      "@src/*": ["src/*"],
       "@components/*": ["src/common/components/*"],
-      "@common/*": ["src/common/*"],
       "@context/*": ["src/common/context/*"],
       "@modules/*": ["src/modules/*"],
-      "@pages/*": ["src/pages/*"],
-      "@lib/*": ["src/common/lib/*"]
+      "@images/*": ["src/images/*"],
+      "@lib/*": ["src/lib/*"],
+      "@styles/*": ["src/styles/*"]
     }
   },
   "settings": {

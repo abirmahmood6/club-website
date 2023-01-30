@@ -1,9 +1,15 @@
-import AppBar from '../common/components/AppBar/AppBar.jsx'
+import { Navbar } from '@components/Navbar'
+import { Hero } from '@components/Hero'
 
 const Home = () => {
   return (
     <div>
-      <AppBar />
+      <nav>
+        <Navbar />
+      </nav>
+      <main>
+        <Hero />
+      </main>
     </div>
   )
 }
