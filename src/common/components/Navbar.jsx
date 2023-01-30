@@ -4,12 +4,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
+import { navigation } from '@lib/constants'
 
 export const MobileNav = ({ open, onClose }) => (
   <Dialog as='div' open={open} onClose={onClose}>
@@ -73,8 +68,8 @@ export const Navbar = () => {
   return (
     <div className='mx-auto max-w-7xl px-6 pt-6 lg:px-8'>
       <nav className='flex items-center justify-between' aria-label='Global'>
-        <div className='flex lg:flex-1'>
-          <a href='#' className='-m-1.5 p-1.5'>
+        <div className='flex items-center lg:flex-1'>
+          <Link href='#' className='-m-1.5 p-1.5'>
             <span className='sr-only'>BMCC Programming Club</span>
             <Image
               className='h-8'
@@ -83,7 +78,10 @@ export const Navbar = () => {
               src='https://res.cloudinary.com/iamalmiir/image/upload/v1675047562/logoBMCC_ggm94z.png'
               alt='BMCC Programming Club Logo'
             />
-          </a>
+          </Link>
+          <h6 className='text-white text-xs font-medium'>
+            BMCC Programming Club
+          </h6>
         </div>
         <div className='flex lg:hidden'>
           <button

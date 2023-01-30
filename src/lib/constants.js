@@ -1,7 +1,6 @@
-const navLinks = {
-  home: '/',
-  about: '/about',
-  events: '/events',
-  resources: '/resources',
-  contribute: '/contribute',
-}
+export const navigation = [
+  { name: 'About', href: '#' },
+  { name: 'Events', href: '#' },
+  { name: 'Resources', href: '#' },
+  { name: 'Contribute', href: '#' },
+]
