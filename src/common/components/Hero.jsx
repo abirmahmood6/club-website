@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 
 import { Button } from '@components/Button'
+import { gitHubLink } from '@lib/constants'
 import { HeroBackground } from '@components/HeroBackground'
 import blurCyanImage from '@images/blur-cyan.png'
 import blurIndigoImage from '@images/blur-indigo.png'
@@ -62,7 +63,7 @@ export const Hero = () => {
               </p>
               <div className='mt-8 flex gap-4 md:justify-center lg:justify-start'>
                 <Button href='/'>Get started</Button>
-                <Button href='/' variant='secondary'>
+                <Button href={gitHubLink} variant='secondary'>
                   View on GitHub
                 </Button>
               </div>

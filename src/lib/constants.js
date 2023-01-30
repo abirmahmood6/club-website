@@ -4,3 +4,5 @@ export const navigation = [
   { name: 'Resources', href: '#' },
   { name: 'Contribute', href: '#' },
 ]
+
+export const gitHubLink = 'https://github.com/Program-BMCC'
