@@ -2,9 +2,10 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import Highlight, { defaultProps } from 'prism-react-renderer'
+import dracula from 'prism-react-renderer/themes/dracula'
 
 import { Button } from '@components/Button'
-import { gitHubLink } from '@lib/constants'
+import { links } from '@lib/constants'
 import { HeroBackground } from '@components/HeroBackground'
 import blurCyanImage from '@images/blur-cyan.png'
 import blurIndigoImage from '@images/blur-indigo.png'
@@ -14,14 +15,14 @@ const code = `#include <iostream>
 using namespace std;
 
 int main() {
-  cout << "Coming Soon!" << endl;
+  cout << "Something is brewing!" << endl;
 
   return 0;
 }
 `
 
 const tabs = [
-  { name: 'sayhi.cpp', isActive: true },
+  { name: 'message.cpp', isActive: true },
   { name: 'CMakeLists.txt', isActive: false },
 ]
 
@@ -62,9 +63,9 @@ export const Hero = () => {
                 Check back soon.
               </p>
               <div className='mt-8 flex gap-4 md:justify-center lg:justify-start'>
-                <Button href='/'>Get started</Button>
-                <Button href={gitHubLink} variant='secondary'>
-                  View on GitHub
+                <Button href='/'>Join Us</Button>
+                <Button href={links.about} variant='secondary'>
+                  Learn More
                 </Button>
               </div>
             </div>

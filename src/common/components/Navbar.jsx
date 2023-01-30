@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
-import { navigation } from '@lib/constants'
+import { navigation, logoSrc } from '@lib/constants'
+import { OuterContainer } from '@components/Container'
 
 export const MobileNav = ({ open, onClose }) => (
   <Dialog as='div' open={open} onClose={onClose}>
@@ -13,13 +14,13 @@ export const MobileNav = ({ open, onClose }) => (
       className='fixed inset-0 z-10 overflow-y-auto bg-slate-900 px-6 py-6 lg:hidden'
     >
       <div className='flex items-center justify-between'>
-        <Link href='/' className='-m-1.5 p-1.5'>
+        <Link href='/' className='-m-1.5 p-1.5  '>
           <span className='sr-only'>BMCC Programming Club</span>
           <Image
             className='h-8'
             width={64}
             height={32}
-            src='https://res.cloudinary.com/iamalmiir/image/upload/v1675047562/logoBMCC_ggm94z.png'
+            src={logoSrc}
             alt='BMCC Programming Club Logo'
           />
         </Link>
@@ -66,7 +67,7 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className='mx-auto max-w-7xl px-6 pt-6 lg:px-8'>
+    <OuterContainer className='pt-6'>
       <nav className='flex items-center justify-between' aria-label='Global'>
         <div className='flex items-center lg:flex-1'>
           <Link href='#' className='-m-1.5 p-1.5'>
@@ -75,7 +76,7 @@ export const Navbar = () => {
               className='h-8'
               width={64}
               height={32}
-              src='https://res.cloudinary.com/iamalmiir/image/upload/v1675047562/logoBMCC_ggm94z.png'
+              src={logoSrc}
               alt='BMCC Programming Club Logo'
             />
           </Link>
@@ -117,6 +118,6 @@ export const Navbar = () => {
         open={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}
       />
-    </div>
+    </OuterContainer>
   )
 }
