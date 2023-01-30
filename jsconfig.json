@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "baseUrl": "./",
+
+    "paths": {
+      "@components/*": ["src/common/components/*"],
+      "@context/*": ["src/common/context/*"],
+      "@modules/*": ["src/modules/*"],
+      "@images/*": ["src/images/*"],
+      "@lib/*": ["src/lib/*"],
+      "@styles/*": ["src/styles/*"]
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
