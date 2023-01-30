@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import '@styles/globals.css'
+import '@fontsource/playfair-display'
+import '@fontsource/montserrat-alternates'
+import { Fragment } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
-
+const MyApp = ({ Component, pageProps }) => (
+  <Fragment>
+    <Component {...pageProps} />
+    <Analytics />
+  </Fragment>
+)
 export default MyApp

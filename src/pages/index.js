@@ -1,20 +1,17 @@
-import styles from '../styles/Home.module.css'
-import axios from 'axios'
+import { Navbar } from '@components/Navbar'
+import { Hero } from '@components/Hero'
 
 const Home = () => {
   return (
-    <div className={styles.container}>
-      <h1>Home Page</h1>
+    <div>
+      <nav>
+        <Navbar />
+      </nav>
+      <main>
+        <Hero />
+      </main>
     </div>
   )
-}
-
-export const getStaticProps = async (context) => {
-  const data = await axios.get('http://localhost:3000/api/hello/')
-  console.log(data)
-  return {
-    props: {},
-  }
 }
 
 export default Home
