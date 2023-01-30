@@ -39,7 +39,10 @@ export const Hero = () => {
     <div className='overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]'>
       <div className='flex h-screen py-16 sm:px-2 lg:relative lg:py-20 lg:px-0'>
         <div className='mx-auto grid max-w-7xl grid-cols-1 items-center gap-y-16 gap-x-8 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12'>
-          <div className='relative z-10 md:text-center lg:text-left'>
+          <div
+            data-aos='fade-right'
+            className='relative z-10 md:text-center lg:text-left'
+          >
             <Image
               className='absolute bottom-full right-full -mr-72 -mb-56 opacity-50'
               src={blurCyanImage}
@@ -117,7 +120,10 @@ export const Hero = () => {
                       </div>
                     ))}
                   </div>
-                  <div className='mt-6 flex items-start px-1 text-sm'>
+                  <div
+                    data-aos='fade-left'
+                    className='mt-6 flex items-start px-1 text-sm'
+                  >
                     <div
                       aria-hidden='true'
                       className='select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600'
