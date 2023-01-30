@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import Highlight, { defaultProps } from 'prism-react-renderer'
-import dracula from 'prism-react-renderer/themes/dracula'
 
 import { Button } from '@components/Button'
 import { links } from '@lib/constants'
