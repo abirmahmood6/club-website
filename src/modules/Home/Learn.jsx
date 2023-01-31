@@ -28,7 +28,7 @@ const Learn = () => (
             <div>
               <div className='flex justify-start items-center'>
                 <BsCodeSlash className='h-12 w-12 text-white opacity-25' />
-                <h6 className='p-4 text-3xl text-gray-300 font-playfair'>
+                <h6 className='p-4 text-3xl text-gray-200 backdrop:blur-xl font-playfair'>
                   Leveling Up Tech Skills, Regardless of Experience
                 </h6>
               </div>
