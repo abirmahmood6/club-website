@@ -9,8 +9,8 @@
       "@context/*": ["src/common/context/*"],
       "@modules/*": ["src/modules/*"],
       "@images/*": ["src/images/*"],
-      "@lib/*": ["src/lib/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@lib/*": ["src/lib/*"]
     }
   },
   "settings": {
