@@ -11,7 +11,7 @@ export const MobileNav = ({ open, onClose }) => (
   <Dialog as='div' open={open} onClose={onClose}>
     <Dialog.Panel
       focus='true'
-      className='fixed inset-0 z-10 overflow-y-auto bg-slate-900 px-6 py-6 lg:hidden'
+      className='fixed inset-0 z-50 overflow-y-auto bg-slate-900 px-6 py-6 lg:hidden'
     >
       <div className='flex items-center justify-between'>
         <Link href='/' className='-m-1.5 p-1.5  '>

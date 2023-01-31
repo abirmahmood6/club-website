@@ -38,7 +38,7 @@ const TrafficLightsIcon = (props) => {
 export const Hero = () => {
   return (
     <div className='overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]'>
-      <div className='flex h-screen py-16 sm:px-2 lg:relative lg:py-20 lg:px-0'>
+      <div className='py-16 sm:px-2 lg:relative lg:py-20 lg:px-0'>
         <div className='mx-auto grid max-w-7xl grid-cols-1 items-center gap-y-16 gap-x-8 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12'>
           <div
             data-aos='fade-right'
