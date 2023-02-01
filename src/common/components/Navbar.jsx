@@ -24,9 +24,11 @@ export const MobileNav = ({ open, onClose }) => (
             alt='BMCC Programming Club Logo'
           />
         </Link>
-        <h6 className='text-white text-xs font-medium'>
-          BMCC Programming Club
-        </h6>
+        <Link href='/'>
+          <h6 className='text-white text-xs font-medium'>
+            BMCC Programming Club
+          </h6>
+        </Link>
         <button
           type='button'
           className='-m-2.5 rounded-md p-2.5 text-gray-700'
@@ -63,14 +65,14 @@ export const MobileNav = ({ open, onClose }) => (
   </Dialog>
 )
 
-export const Navbar = () => {
+const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <OuterContainer className='pt-6'>
       <nav className='flex items-center justify-between' aria-label='Global'>
         <div className='flex items-center lg:flex-1'>
-          <Link href='#' className='-m-1.5 p-1.5'>
+          <Link href='/' className='-m-1.5 p-1.5'>
             <span className='sr-only'>BMCC Programming Club</span>
             <Image
               className='h-8'
@@ -80,9 +82,11 @@ export const Navbar = () => {
               alt='BMCC Programming Club Logo'
             />
           </Link>
-          <h6 className='text-white text-xs font-medium'>
-            BMCC Programming Club
-          </h6>
+          <Link href='/'>
+            <h6 className='text-white text-xs font-medium'>
+              BMCC Programming Club
+            </h6>
+          </Link>
         </div>
         <div className='flex lg:hidden'>
           <button
@@ -121,3 +125,5 @@ export const Navbar = () => {
     </OuterContainer>
   )
 }
+
+export default Navbar

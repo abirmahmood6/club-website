@@ -1,3 +1,5 @@
+import { BsGithub, BsDiscord } from 'react-icons/bs'
+
 export const logoSrc =
   'https://res.cloudinary.com/iamalmiir/image/upload/v1675047562/logoBMCC_ggm94z.png'
 
@@ -17,3 +19,15 @@ export const links = {
 }
 
 export const gitHubLink = 'https://github.com/Program-BMCC'
+export const socialLinks = [
+  {
+    name: 'GitHub',
+    href: gitHubLink,
+    icon: BsGithub,
+  },
+  {
+    name: 'Discord',
+    href: 'https://discord.gg/h7DmshxJ',
+    icon: BsDiscord,
+  },
+]
