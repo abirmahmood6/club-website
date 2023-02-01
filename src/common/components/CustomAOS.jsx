@@ -9,10 +9,10 @@ const CustomAOS = () => {
   useEffect(() => {
     AOS.init({
       once: true,
-      duration: 1000,
+      duration: 1500,
       easing: 'ease-in-out',
       mirror: true,
-      delay: 100,
+      delay: 1000,
       offset: 100,
     })
   }, [])
