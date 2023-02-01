@@ -11,20 +11,19 @@ import blurCyanImage from '@images/blur-cyan.png'
 import blurIndigoImage from '@images/blur-indigo.png'
 import Transition from '@hooks/Transition'
 
-const codeLanguage = 'cpp'
-const code = `#include <iostream>
-using namespace std;
-
-int main() {
-  cout << "Something is brewing!" << endl;
-
-  return 0;
-}
+const codeLanguage = 'jsx'
+const code = `export const Message() => (
+  <div className='relative'>
+    <h2 className='text-2xl text-sky-500'>
+      Something is brewing!
+    </h2>
+  </div> 
+)
 `
 
 const tabs = [
-  { name: 'message.cpp', isActive: true },
-  { name: 'CMakeLists.txt', isActive: false },
+  { name: 'Message.jsx', isActive: true },
+  { name: 'package.json', isActive: false },
 ]
 
 const TrafficLightsIcon = (props) => {
@@ -92,7 +91,7 @@ export const Hero = () => {
               priority
             />
             <Transition>
-              <div className='relative bg-slate-900'>
+              <div className='relative rounded-2xl bg-slate-900'>
                 <div className='absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10 blur-lg' />
                 <div className='absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10' />
                 <div className='relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur'>
