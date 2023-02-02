@@ -17,3 +17,12 @@ export const Button = ({ variant = 'primary', className, href, ...props }) => {
     <button className={className} {...props} />
   )
 }
+
+export const ButtonIcon = ({ variant = 'primary', className, ...props }) => {
+  className = clsx(
+    'inline-flex items-center rounded-md border border-transparent',
+    className
+  )
+
+  return <Button variant={variant} className={className} {...props} />
+}

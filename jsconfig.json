@@ -8,6 +8,8 @@
       "@components/*": ["src/common/components/*"],
       "@context/*": ["src/common/context/*"],
       "@modules/*": ["src/modules/*"],
+      "@hooks/*": ["src/common/hooks/*"],
+      "@screens/*": ["src/screens/*"],
       "@images/*": ["src/images/*"],
       "@styles/*": ["src/styles/*"],
       "@lib/*": ["src/lib/*"]
