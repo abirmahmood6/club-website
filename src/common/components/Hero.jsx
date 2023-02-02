@@ -12,7 +12,7 @@ import blurIndigoImage from '@images/blur-indigo.png'
 import Transition from '@hooks/Transition'
 
 const codeLanguage = 'jsx'
-const code = `export const Message() => (
+const code = `export const Message = () => (
   <div className='relative'>
     <h2 className='text-2xl text-sky-500'>
       Something is brewing!
