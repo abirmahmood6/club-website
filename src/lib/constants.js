@@ -27,7 +27,7 @@ export const socialLinks = [
   },
   {
     name: 'Discord',
-    href: 'https://discord.gg/h7DmshxJ',
+    href: 'https://discord.gg/kUtD4q7zpU',
     icon: BsDiscord,
   },
 ]
