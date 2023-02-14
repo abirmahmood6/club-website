@@ -61,7 +61,7 @@ export const Hero = () => {
                 Check back soon.
               </p>
               <div className='mt-8 flex gap-4 md:justify-center lg:justify-start'>
-                <Button href='/'>Join Us</Button>
+                <Button href='/join'>Join Us</Button>
                 <Button href={links.about} variant='secondary'>
                   Learn More
                 </Button>
