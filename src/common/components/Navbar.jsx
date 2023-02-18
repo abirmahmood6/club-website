@@ -111,7 +111,7 @@ const Navbar = () => {
         </div>
         <div className='hidden  z-40 lg:flex lg:flex-1 lg:justify-end'>
           <Link
-            href='#'
+            href='/join'
             className='text-sm font-semibold leading-6 link link-underline link-underline-black text-white'
           >
             Join the Club <span aria-hidden='true'>&rarr;</span>
