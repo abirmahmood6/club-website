@@ -19,6 +19,10 @@ export const links = {
 }
 
 export const gitHubLink = 'https://github.com/Program-BMCC'
+export const discordLink = 'https://discord.gg/kUtD4q7zpU'
+export const googleFormLink =
+  'https://docs.google.com/forms/d/e/1FAIpQLSeE24To66MBfdrlnxSZ8fVdY9cKnmr9n2UAPkfI6v-S1mxcbw/viewform'
+
 export const socialLinks = [
   {
     name: 'GitHub',
@@ -27,7 +31,7 @@ export const socialLinks = [
   },
   {
     name: 'Discord',
-    href: 'https://discord.gg/kUtD4q7zpU',
+    href: discordLink,
     icon: BsDiscord,
   },
 ]
