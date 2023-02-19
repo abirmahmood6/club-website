@@ -1,6 +1,7 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRouter } from 'next/router'
 import { Dialog } from '@headlessui/react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
@@ -67,6 +68,7 @@ export const MobileNav = ({ open, onClose }) => (
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const router = useRouter()
 
   return (
     <OuterContainer className='pt-6'>
@@ -110,12 +112,14 @@ const Navbar = () => {
           ))}
         </div>
         <div className='hidden  z-40 lg:flex lg:flex-1 lg:justify-end'>
-          <Link
-            href='/join'
-            className='text-sm font-semibold leading-6 link link-underline link-underline-black text-white'
-          >
-            Join the Club <span aria-hidden='true'>&rarr;</span>
-          </Link>
+          {router.pathname !== '/join' && (
+            <Link
+              href='/join'
+              className='text-sm font-semibold leading-6 link link-underline link-underline-black text-white'
+            >
+              Join the Club <span aria-hidden='true'>&rarr;</span>
+            </Link>
+          )}
         </div>
       </nav>
       <MobileNav
