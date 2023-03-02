@@ -94,7 +94,7 @@ const Join = () => {
         >
           <Link target='_blank' href={googleFormLink}>
             <MdFormatListBulleted
-              className={'mx-auto text-8xl text-blue-500'}
+              className={'mx-auto text-7xl text-blue-500'}
             />
             <p className={'mx-auto mt-3'}>Sign-Up via Google Form</p>
           </Link>
@@ -105,13 +105,14 @@ const Join = () => {
           }
         >
           <Link target='_blank' href={discordLink}>
-            <FaDiscord className={'mx-auto text-8xl text-indigo-500'} />
+            <FaDiscord className={'mx-auto text-7xl text-indigo-500'} />
             <p className={'mx-auto mt-3'}>Join Our Discord Server</p>
           </Link>
         </div>
         <div className={'mx-auto text-center'}>
-          <FaCalendarAlt className={'mx-auto text-8xl text-red-500'} />
-          <p className={'mx-auto mt-3'}>Meet Us in Person! (Setting TBD)</p>
+          <FaCalendarAlt className={'mx-auto text-7xl text-red-500'} />
+          <p className={'mx-auto mt-3'}>Meet Us in Person!</p>
+          <p className={'mx-auto mt-3'}>(Wed Room F1113 @2pm)</p>
         </div>
       </div>
     </div>
