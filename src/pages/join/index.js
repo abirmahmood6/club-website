@@ -112,7 +112,7 @@ const Join = () => {
         <div className={'mx-auto text-center'}>
           <FaCalendarAlt className={'mx-auto text-7xl text-red-500'} />
           <p className={'mx-auto mt-3'}>Meet Us in Person!</p>
-          <p className={'mx-auto mt-3'}>(Wed Room F1113 @2pm)</p>
+          <p className={'mx-auto mt-3'}>(Wednesdays, Room F204 @2pm)</p>
         </div>
       </div>
     </div>
